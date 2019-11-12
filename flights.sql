@@ -35,3 +35,17 @@
 --   stops int DEFAULT NULL,
 --   equipment varchar(255) DEFAULT NULL
 -- );
+
+COPY routes 
+  FROM '/Users/markcalvelo/Desktop/routes.csv' 
+  DELIMITER ',' CSV;
+
+COPY airports 
+  FROM '/Users/markcalvelo/Desktop/airports.csv'
+  DELIMITER ',' CSV;
+
+COPY airlines 
+  FROM '/Users/markcalvelo/Desktop/airlines.csv'
+  DELIMITER ',' CSV;
+
+-- SELECT * FROM routes;
